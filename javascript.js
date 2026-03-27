@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---- CUSTOM CURSOR ---- */
+  /* ---- Fancy Cursor ---- */
   const cursor = document.getElementById('cursor');
   const cursorTrail = document.getElementById('cursorTrail');
   let mouseX = 0, mouseY = 0, trailX = 0, trailY = 0;
@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
   animateCursor();
 
 
-  /* ---- NAV: SCROLL SHRINK ---- */
+  /* ---- Navigator Manu ---- */
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   });
 
 
-  /* ---- HAMBURGER MENU ---- */
+  /* ---- Hamburger Menu ---- */
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
   const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ---- SCROLL REVEAL ---- */
+  /* ---- Scroll Reveal ---- */
   const reveals = document.querySelectorAll('.reveal');
 
   const revealObserver = new IntersectionObserver((entries) => {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   reveals.forEach(el => revealObserver.observe(el));
 
 
-  /* ---- COUNTER ANIMATION ---- */
+  /* ---- Counter Anime ---- */
   const counters = document.querySelectorAll('.stat-num[data-target]');
 
   const counterObserver = new IntersectionObserver((entries) => {
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   counters.forEach(el => counterObserver.observe(el));
 
 
-  /* ---- GPA BAR ANIMATION ---- */
+  /* ---- GPA Bar Design ---- */
   const gpaFill = document.querySelector('.gpa-fill');
   if (gpaFill) {
     const gpaObserver = new IntersectionObserver((entries) => {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ---- SMOOTH ACTIVE NAV HIGHLIGHT ---- */
+  /* ---- Smooth Navi Design ---- */
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', setActiveNav);
 
 
-  /* ---- SKILL TAGS HOVER RIPPLE ---- */
+  /* ---- Skill Tags ---- */
   const skillTags = document.querySelectorAll('.skill-tags span');
   skillTags.forEach(tag => {
     tag.addEventListener('click', function () {
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ---- TIMELINE CARD TILT ---- */
+  /* ---- Card Tilt Cardline---- */
   const cards = document.querySelectorAll('.timeline-card');
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ---- HERO TITLE: TYPED EFFECT SHIMMER ---- */
+  /* ---- Hero Title design ---- */
   const heroLines = document.querySelectorAll('.hero-title .line');
   heroLines.forEach((line, i) => {
     line.style.animationDelay = `${i * 0.15}s`;
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ---- PARALLAX SHAPES ---- */
+  /* ---- Parallax---- */
   const shapes = document.querySelectorAll('.shape');
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ---- CONTACT ITEM COPY-TO-CLIPBOARD ---- */
+  /* ---- Contacts ---- */
   const emailItem = document.querySelector('a[href^="mailto"]');
   if (emailItem) {
     emailItem.title = 'Click to copy email';
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ---- FOOTER YEAR ---- */
+  /* ---- Footer ---- */
   const footerYear = document.querySelector('.footer-small');
   if (footerYear) {
     const yr = new Date().getFullYear();
